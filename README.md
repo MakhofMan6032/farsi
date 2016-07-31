@@ -1,6 +1,18 @@
-Ibot
+# SUDO!
 
-**An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU General Public License](https://github.com/hafez16/mega-shield/blob/supergroups/LICENSE)**.
+#Mohammad Heydari  ([Telegram](https://telegram.me/agent_spartacus))
+
+### MY Telegram channels:
+
+Helper: [@spartacus_echo_team](https://telegram.me/spartacus_echo_team)
+
+News: [@spartacusTEAM_news](https://telegram.me/spartacusTEAM_news)
+
+### SUPPORT SpartacusTEAM:
+
+  [SUPPORT](https://telegram.me/https://telegram.me/joinchat/CG94qD6X_LvA24C7nC99kA)
+
+
 
 | Command | Description |
 |:--------|:------------|
@@ -243,11 +255,8 @@ After you run the bot for first time, send it `!id`. Get your ID and stop the bo
 Open ./data/config.lua and add your ID to the "sudo_users" section in the following format:
 ```
   sudo_users = {
-    110626080,
-    103649648,
-    111020322,
-    0,
-    YourID
+    158586343,
+    your ID
   }
 ```
 Then restart the bot.
@@ -268,9 +277,13 @@ Create a realm using the `!createrealm` command.
 
 # Support and development
 
-Check out this [tutorial by Telegram Geeks](http://telegramgeeks.com/2016/01/teleseed-tutorial/) for further assistance with setup and installation.
+MY Telegram channels 
 
-[hafez (developer)](https://telegram.me/hafez1116hafez)
-[amir hosein (developer)](https://telegram.me/amirho3ien911)
-[mostafa (manager)](https://telegram.me/Eblis_alone)
-[mohammad (sponsor)](https://telegram.me/Mmd_hei)
+[support](http://telegram.me/spartacus_echo_team)
+
+[news](https://telegram.me/spartacusTEAM_news)
+
+[mohammad (developer)](https://telegram.me/agent_spartacus)
+[amirho3ien (developer)](https://telegram.me/amirho3ien911)
+[amir (manager)](https://telegram.me/Eblis_alone)
+[abolfazl (sponsor)](https://telegram.me/a_b_o_l_i)
