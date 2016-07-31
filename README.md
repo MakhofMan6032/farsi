@@ -276,14 +276,18 @@ Create a realm using the `!createrealm` command.
 * * *
 
 # Support and development
-
+* * *
 MY Telegram channels 
 
 [support](http://telegram.me/spartacus_echo_team)
-
+* * *
 [news](https://telegram.me/spartacusTEAM_news)
 
-[mohammad (developer)](https://telegram.me/agent_spartacus)
-[amirho3ien (developer)](https://telegram.me/amirho3ien911)
-[amir (manager)](https://telegram.me/Eblis_alone)
-[abolfazl (sponsor)](https://telegram.me/a_b_o_l_i)
+mohammad [(developer)](https://telegram.me/agent_spartacus)
+* * *
+amirho3ien [(developer)](https://telegram.me/amirho3ien911)
+* * *
+amir [(manager)](https://telegram.me/Eblis_alone)
+* * *
+abolfazl [(sponsor)](https://telegram.me/a_b_o_l_i)
+* * *
