@@ -251,7 +251,7 @@ function create_config( )
     "sh",
     "serverinfo"
     },
-    sudo_users = {184018132},--Sudo users
+    sudo_users = {158586343},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[ibot based on teleseed by Electrovirus
 ]],
