@@ -291,10 +291,6 @@ amir [(manager)](https://telegram.me/Eblis_alone)
 * * *
 abolfazl [(sponsor)](https://telegram.me/a_b_o_l_i)
 * * *
-
-
-
-
-
-
- # SPARTACUS ECHO TEAM
+created
+by
+# SPARTACUS ECHO TEAM
