@@ -253,7 +253,7 @@ function create_config( )
     },
     sudo_users = {158586343},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[ibot based on teleseed by Electrovirus
+    about_text = [[MakhofMan based on teleseed by Spartacus echo TEAM
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -341,10 +341,12 @@ This command will send text to [group_id]
     help_text = [[
 Not allowed for you🚫
 Needs Sudo🗽
+@agent_spartacus
 ]],
 	help_text_super =[[
 Not allowed for you🚫
 Needs Sudo🗽
+@agent_spartacus
 ]],
   }
   serialize_to_file(config, './data/config.lua')
