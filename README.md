@@ -233,8 +233,8 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/hafez16/mega-shield.git
-cd mega-shield
+git clone https://github.com/spartacusechoteam/sparta.git
+cd sparta
 chmod +x launch.sh
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
@@ -280,9 +280,9 @@ Create a realm using the `!createrealm` command.
 MY Telegram channels 
 
 [support](http://telegram.me/spartacus_echo_team)
-* * *
+*
 [news](https://telegram.me/spartacusTEAM_news)
-
+* * *
 mohammad [(developer)](https://telegram.me/agent_spartacus)
 * * *
 amirho3ien [(developer)](https://telegram.me/amirho3ien911)
@@ -291,3 +291,10 @@ amir [(manager)](https://telegram.me/Eblis_alone)
 * * *
 abolfazl [(sponsor)](https://telegram.me/a_b_o_l_i)
 * * *
+
+
+
+
+
+
+ # SPARTACUS ECHO TEAM
