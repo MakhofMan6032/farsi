@@ -2695,7 +2695,7 @@ end
 
 return {
   patterns = {
-	"^([Aa]dd)$",
+		"^([Aa]dd)$",
 	"^([Rr]em)$",
 	"^([Mm]ove) (.*)$",
 	"^([Gg]pinfo)$",
