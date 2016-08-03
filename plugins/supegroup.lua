@@ -18,7 +18,7 @@ local function check_member_super(cb_extra, success, result)
         set_owner = member_id ,
         settings = {
           set_name = string.gsub(msg.to.title, '_', ' '),
-		  lock_arabic = 'no',
+		  lock_farsi = 'no',
 		  lock_link = "no",
           flood = 'yes',
 		  lock_spam = 'yes',
@@ -638,31 +638,31 @@ local function unlock_group_flood(msg, data, target)
   end
 end
 
-local function lock_group_arabic(msg, data, target)
+local function lock_group_farsi(msg, data, target)
   if not is_momod(msg) then
     return
   end
-  local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
-  if group_arabic_lock == 'yes' then
-    return 'Arabic is already locked'
+  local group_farsi_lock = data[tostring(target)]['settings']['lock_farsi']
+  if group_farsi_lock == 'yes' then
+    return 'farsi is already locked'
   else
-    data[tostring(target)]['settings']['lock_arabic'] = 'yes'
+    data[tostring(target)]['settings']['lock_farsi'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'Arabic has been locked'
+    return 'farsi has been locked'
   end
 end
 
-local function unlock_group_arabic(msg, data, target)
+local function unlock_group_farsi(msg, data, target)
   if not is_momod(msg) then
     return
   end
-  local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
-  if group_arabic_lock == 'no' then
-    return 'Arabic/Persian is already unlocked'
+  local group_farsi_lock = data[tostring(target)]['settings']['lock_farsi']
+  if group_farsi_lock == 'no' then
+    return 'farsi is already unlocked'
   else
-    data[tostring(target)]['settings']['lock_arabic'] = 'no'
+    data[tostring(target)]['settings']['lock_farsi'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Arabic/Persian has been unlocked'
+    return 'farsi has been unlocked'
   end
 end
 
@@ -1033,7 +1033,7 @@ function show_supergroup_settingsmod(msg, target)
   local gp_type = data[tostring(msg.to.id)]['group_type']
   
   local settings = data[tostring(target)]['settings']
-  local text = "________________________________\n™SuperGroup settingsâš™:\n________________________________\n🚫Lock links♨️ : "..settings.lock_link.."\n🚫Lock contacts ⚠️: "..settings.lock_contacts.."\n🚫Lock flood☢ : "..settings.flood.."\n🔥Flood sensitivity🔥 : "..NUM_MSG_MAX.."\n🚫Lock spam🚫 : "..settings.lock_spam.."\n🚫Lock Arabic🅰 : "..settings.lock_arabic.."\n🚫Lock Member🗣 : "..settings.lock_member.."\n🚫Lock RTL❌ : "..settings.lock_rtl.."\n🚫Lock Tgservice☣ : "..settings.lock_tgservice.."\n🚫Lock sticker🌄 : "..settings.lock_sticker.."\n🚫Lock tag🛡#🛡 : "..settings.tag.."\n🚫Lock emoji😅 : "..settings.emoji.."\n🚫Lock english🆎 : "..settings.english.."\n🚫Lock fwd👀forward👀 : "..settings.fwd.."\n🚫Lock reply🎒 : "..settings.reply.."\n🚫Lock join👥 : "..settings.join.."\n🚫Lock username🔰@🔰 : "..settings.username.."\n🚫Lock media🎞 : "..settings.media.."\n🚫Lock fosh💀 : "..settings.fosh.."\n🚫Lock leave👤 : "..settings.leave.."\n🚫Lock bots✳️ : "..bots_protection.."\n🚫Lock operator➡️ : "..settings.operator.."\n____________________\n™Easy Sweet&Faster Switchâš™:\n____________________\n🔰Switch Model Etehad🔰 : "..settings.etehad.."\n❌🅰Lock all🅰❌ : "..settings.all.."\n____________________\n¹About Groupâ¹:\n____________________\n⚛group type⚛ : "..gp_type.."\n🚫Public🚫 : "..settings.public.."\n🔱Strict settings🔱 : "..settings.strict.."\n____________________\n»bot version : v8.5«\n»‘‘SpartacuS_TEAM‘‘«\n🔱 @spartacus_echo_team 🔱"
+  local text = "________________________________\n™SuperGroup settingsâš™:\n________________________________\n🚫Lock links♨️ : "..settings.lock_link.."\n🚫Lock contacts ⚠️: "..settings.lock_contacts.."\n🚫Lock flood☢ : "..settings.flood.."\n🔥Flood sensitivity🔥 : "..NUM_MSG_MAX.."\n🚫Lock spam🚫 : "..settings.lock_spam.."\n🚫Lock farsi🅰 : "..settings.lock_farsi.."\n🚫Lock Member🗣 : "..settings.lock_member.."\n🚫Lock RTL❌ : "..settings.lock_rtl.."\n🚫Lock Tgservice☣ : "..settings.lock_tgservice.."\n🚫Lock sticker🌄 : "..settings.lock_sticker.."\n🚫Lock tag🛡#🛡 : "..settings.tag.."\n🚫Lock emoji😅 : "..settings.emoji.."\n🚫Lock english🆎 : "..settings.english.."\n🚫Lock fwd👀forward👀 : "..settings.fwd.."\n🚫Lock reply🎒 : "..settings.reply.."\n🚫Lock join👥 : "..settings.join.."\n🚫Lock username🔰@🔰 : "..settings.username.."\n🚫Lock media🎞 : "..settings.media.."\n🚫Lock fosh💀 : "..settings.fosh.."\n🚫Lock leave👤 : "..settings.leave.."\n🚫Lock bots✳️ : "..bots_protection.."\n🚫Lock operator➡️ : "..settings.operator.."\n____________________\n™Easy Sweet&Faster Switchâš™:\n____________________\n🔰Switch Model Etehad🔰 : "..settings.etehad.."\n❌🅰Lock all🅰❌ : "..settings.all.."\n____________________\n¹About Groupâ¹:\n____________________\n⚛group type⚛ : "..gp_type.."\n🚫Public🚫 : "..settings.public.."\n🔱Strict settings🔱 : "..settings.strict.."\n____________________\n»bot version : v8.5«\n»‘‘SpartacuS_TEAM‘‘«\n🔱 @spartacus_echo_team 🔱"
   return text
 end
 
@@ -1736,7 +1736,7 @@ local function run(msg, matches)
 				resolve_username(username,  callbackres, cbres_extra)
 			else
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested SuperGroup ID")
-				return ">Your Name: " ..string.gsub(msg.from.print_name, "_", " ").. "\n>Your Username: @"..(msg.from.username or '----').."\n>Your ID: "..msg.from.id.."\n\n>SuperGroup Name: " ..string.gsub(msg.to.print_name, "_", " ").. "\n>SuperGroup ID: "..msg.to.id
+				return "نام شما : " ..string.gsub(msg.from.print_name, "_", " ").. "\nلینک شما : https://telegram.me/"..(msg.from.username or'----').."\nآیدی شما : "..msg.from.id.."\n\nنام سوپرگروه : "..string.gsub(msg.to.print_name,"_","").."\nیوزرنیم شما : @"..(msg.from.username or '----').."\n آیدی سوپر گروه:"..msg.to.id
 			end
 		end
 
@@ -2120,7 +2120,7 @@ local function run(msg, matches)
 		lock_group_tag(msg, data, target),
 		lock_group_spam(msg, data, target),
 		lock_group_flood(msg, data, target),
-		lock_group_arabic(msg, data, target),
+		lock_group_farsi(msg, data, target),
 		lock_group_membermod(msg, data, target),
 		lock_group_rtl(msg, data, target),
 		lock_group_tgservice(msg, data, target),
@@ -2146,7 +2146,7 @@ local function run(msg, matches)
 		lock_group_tag(msg, data, target),
 		lock_group_spam(msg, data, target),
 		lock_group_flood(msg, data, target),
-		unlock_group_arabic(msg, data, target),
+		unlock_group_farsi(msg, data, target),
 		lock_group_membermod(msg, data, target),
 		unlock_group_rtl(msg, data, target),
 		lock_group_tgservice(msg, data, target),
@@ -2186,9 +2186,9 @@ local function run(msg, matches)
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked flood ")
 				return lock_group_flood(msg, data, target)
 			end
-			if matches[2] == 'arabic' then
-				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked arabic ")
-				return lock_group_arabic(msg, data, target)
+			if matches[2] == 'farsi' then
+				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked farsi ")
+				return lock_group_farsi(msg, data, target)
 			end
 			if matches[2] == 'member' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked member ")
@@ -2264,7 +2264,7 @@ local function run(msg, matches)
 		unlock_group_tag(msg, data, target),
 		unlock_group_spam(msg, data, target),
 		unlock_group_flood(msg, data, target),
-		unlock_group_arabic(msg, data, target),
+		unlock_group_farsi(msg, data, target),
 		unlock_group_membermod(msg, data, target),
 		unlock_group_rtl(msg, data, target),
 		unlock_group_tgservice(msg, data, target),
@@ -2290,7 +2290,7 @@ local function run(msg, matches)
 		unlock_group_tag(msg, data, target),
 		lock_group_spam(msg, data, target),
 		lock_group_flood(msg, data, target),
-		unlock_group_arabic(msg, data, target),
+		unlock_group_farsi(msg, data, target),
 		unlock_group_membermod(msg, data, target),
 		unlock_group_rtl(msg, data, target),
 		unlock_group_tgservice(msg, data, target),
@@ -2330,9 +2330,9 @@ local function run(msg, matches)
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked flood")
 				return unlock_group_flood(msg, data, target)
 			end
-			if matches[2] == 'arabic' then
-				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked Arabic")
-				return unlock_group_arabic(msg, data, target)
+			if matches[2] == 'farsi' then
+				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked farsi")
+				return unlock_group_farsi(msg, data, target)
 			end
 			if matches[2] == 'member' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked member ")
@@ -2628,7 +2628,7 @@ local function run(msg, matches)
 		end
 
 		if matches[1] == 'help' and not is_owner(msg) then
-			text = "Message /superhelp to @antispam_shield in private for SuperGroup help"
+			text = "شما دسترسی نداری اقاجان خودتو جر نده😒\nبا سازندم یعنی @agent_spartacus صحبت کن ارتقا درجه بهت بده😏"
 			reply_msg(msg.id, text, ok_cb, false)
 		elseif matches[1] == 'help' and is_owner(msg) then
 			local name_log = user_print_name(msg.from)
@@ -2695,62 +2695,62 @@ end
 
 return {
   patterns = {
-		"^([Aa]dd)$",
-	"^([Rr]em)$",
-	"^([Mm]ove) (.*)$",
-	"^([Gg]pinfo)$",
-	"^([Aa]dmins)$",
-	"^([Oo]wner)$",
-	"^([Mm]odlist)$",
-	"^([Bb]ots)$",
-	"^([Ww]ho)$",
-	"^([Kk]icked)$",
-        "^([Bb]lock) (.*)",
-	"^([Bb]lock)",
-	    "^([Kk]ick) (.*)",
-	"^([Kk]ick)",
-	"^(super)$",
-	"^([Ii][Dd])$",
-	"^([Ii][Dd]) (.*)$",
-	"^([Kk]ickme)$",
-	"^([Nn]ewlink)$",
-	"^([Ss]etlink)$",
-	"^([Ll]ink)$",
-	"^([Rr]es) (.*)$",
-	"^([Ss]etadmin) (.*)$",
-	"^([Ss]etadmin)",
-	"^([Dd]emoteadmin) (.*)$",
-	"^([Dd]emoteadmin)",
-	"^([Ss]etowner) (.*)$",
-	"^([Ss]etowner)$",
-	"^([Pp]romote) (.*)$",
-	"^([Pp]romote)",
-	"^([Dd]emote) (.*)$",
-	"^([Dd]emote)",
-	"^(tname) (.*)$",
-	"^([Ss]etabout) (.*)$",
-	"^([Ss]etrules) (.*)$",
-	"^([Ss]etphoto)$",
-	"^([Ss]etusername) (.*)$",
-	"^([Dd]el)$",
-	"^([Ll]ock) (.*)$",
-	"^([Uu]nlock) (.*)$",
-	"^([Mm]ute) ([^%s]+)$",
-	"^([Uu]nmute) ([^%s]+)$",
-	"^([Ss]ilent)$",
-	"^([Ss]ilent) (.*)$",
-	"^([Uu]nsilent)$",
-	"^([Uu]nsilent) (.*)$",
-	"^([Pp]ublic) (.*)$",
-	"^([Ss]ettings)$",
-	"^([Rr]ules)$",
-	"^([Ss]etflood) (%d+)$",
-	"^([Cc]lean) (.*)$",
-	"^([Hh]elp)$",
-	"^([Mm]uteslist)$",
-	"^([Ss]ilentlist)$",
-    "(mp) (.*)",
-	"(md) (.*)",
+	"^[#!/]([Aa]dd)$",
+	"^[#!/]([Rr]em)$",
+	"^[#!/]([Mm]ove) (.*)$",
+	"^[#!/]([Gg]pinfo)$",
+	"^[#!/]([Aa]dmins)$",
+	"^[#!/]([Oo]wner)$",
+	"^[#!/]([Mm]odlist)$",
+	"^[#!/]([Bb]ots)$",
+	"^[#!/]([Ww]ho)$",
+	"^[#!/]([Kk]icked)$",
+        "^[#!/]([Bb]lock) (.*)",
+	"^[#!/]([Bb]lock)",
+	    "^[#!/]([Kk]ick) (.*)",
+	"^[#!/]([Kk]ick)",
+	"^[#!/]([Tt]osuper)$",
+	"^[#!/]([Ii][Dd])$",
+	"^[#!/]([Ii][Dd]) (.*)$",
+	"^[#!/]([Kk]ickme)$",
+	"^[#!/]([Nn]ewlink)$",
+	"^[#!/]([Ss]etlink)$",
+	"^[#!/]([Ll]ink)$",
+	"^[#!/]([Rr]es) (.*)$",
+	"^[#!/]([Ss]etadmin) (.*)$",
+	"^[#!/]([Ss]etadmin)",
+	"^[#!/]([Dd]emoteadmin) (.*)$",
+	"^[#!/]([Dd]emoteadmin)",
+	"^[#!/]([Ss]etowner) (.*)$",
+	"^[#!/]([Ss]etowner)$",
+	"^[#!/]([Pp]romote) (.*)$",
+	"^[#!/]([Pp]romote)",
+	"^[#!/]([Dd]emote) (.*)$",
+	"^[#!/]([Dd]emote)",
+	"^[#!/]([Ss]etname) (.*)$",
+	"^[#!/]([Ss]etabout) (.*)$",
+	"^[#!/]([Ss]etrules) (.*)$",
+	"^[#!/]([Ss]etphoto)$",
+	"^[#!/]([Ss]etusername) (.*)$",
+	"^[#!/]([Dd]el)$",
+	"^[#!/]([Ll]ock) (.*)$",
+	"^[#!/]([Uu]nlock) (.*)$",
+	"^[#!/]([Mm]ute) ([^%s]+)$",
+	"^[#!/]([Uu]nmute) ([^%s]+)$",
+	"^[#!/]([Ss]ilent)$",
+	"^[#!/]([Ss]ilent) (.*)$",
+	"^[#!/]([Uu]nsilent)$",
+	"^[#!/]([Uu]nsilent) (.*)$",
+	"^[#!/]([Pp]ublic) (.*)$",
+	"^[#!/]([Ss]ettings)$",
+	"^[#!/]([Rr]ules)$",
+	"^[#!/]([Ss]etflood) (%d+)$",
+	"^[#!/]([Cc]lean) (.*)$",
+	"^[#!/]([Hh]elp)$",
+	"^[#!/]([Mm]uteslist)$",
+	"^[#!/]([Ss]ilentlist)$",
+    "[#!/](mp) (.*)",
+	"[#!/](md) (.*)",
     "^(https://telegram.me/joinchat/%S+)$",
 	"msg.to.peer_id",
 	"%[(document)%]",
