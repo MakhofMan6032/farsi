@@ -247,7 +247,6 @@ function create_config( )
     "rmsg",
     "send",
     "set_type",
-    "welcome",
     "sh",
     "serverinfo",
     "write",
