@@ -348,90 +348,90 @@ Needs Sudo🗽
 	help_text_super =[[
 ✅Commands to lock|unlock
 〰〰〰〰〰〰〰〰
-💭lock|unlock link
+💭!lock|unlock link
 ➖➖➖➖➖➖➖➖
-💭lock|unlock member
+💭!lock|unlock member
 ➖➖➖➖➖➖➖➖
-💭lock|unlock flood
+💭!lock|unlock flood
 ➖➖➖➖➖➖➖➖
-💭lock|unlock spam
+💭!lock|unlock spam
 ➖➖➖➖➖➖➖➖
-💭lock|unlock farsi
+💭!lock|unlock farsi
 ➖➖➖➖➖➖➖➖
-💭lock|unlock RTL
+💭!lock|unlock RTL
 ➖➖➖➖➖➖➖➖
-💭lock|unlock Tgservice 
+💭!lock|unlock Tgservice 
 ➖➖➖➖➖➖➖➖
-💭lock|unlock sticker
+💭!lock|unlock sticker
 ➖➖➖➖➖➖➖➖
-💭lock|unlock tag
+💭!lock|unlock tag
 ➖➖➖➖➖➖➖➖
-💭lock|unlock emoji
+💭!lock|unlock emoji
 ➖➖➖➖➖➖➖➖
-💭lock|unlock english
+💭!lock|unlock english
 ➖➖➖➖➖➖➖➖
-💭lock|unlock fwd
+💭!lock|unlock fwd
 ➖➖➖➖➖➖➖➖
-💭lock|unlock reply
+💭!lock|unlock reply
 ➖➖➖➖➖➖➖➖
-💭lock|unlock  join
+💭!lock|unlock  join
 ➖➖➖➖➖➖➖➖
-💭lock|unlock username
+💭!lock|unlock username
 ➖➖➖➖➖➖➖➖
-💭lock|unlock media
+💭!lock|unlock media
 ➖➖➖➖➖➖➖➖
-💭lock|unlock fosh
+💭!lock|unlock fosh
 ➖➖➖➖➖➖➖➖
-💭lock|unlock leave
+💭!lock|unlock leave
 ➖➖➖➖➖➖➖➖
-💭lock|unlock bots
+💭!lock|unlock bots
 ➖➖➖➖➖➖➖➖
-💭lock|unlock operator
+💭!lock|unlock operator
 〰〰〰〰〰〰〰〰
 ➕
 ✅Commands for control member
 〰〰〰〰〰〰〰〰〰〰〰〰
-💭kick : by <reply|id|username>
+💭!kick : by <reply|id|username>
 ➖➖➖➖➖➖➖➖➖➖➖➖
-💭ban : by <reply|id|username>
+💭!ban : by <reply|id|username>
 ➖➖➖➖➖➖➖➖➖➖➖➖
-💭unban : by <reply|id|username>
+💭!unban : by <reply|id|username>
 ➖➖➖➖➖➖➖➖➖➖➖➖
-💭kickme
+💭!kickme
 〰〰〰〰〰〰〰〰〰〰〰〰
 ➕
 ✅Group control 
 〰〰〰〰〰〰〰〰〰
-💭rules
+💭!rules
 ➖➖➖➖➖➖➖➖➖
-💭setrules <write rules>
+💭!setrules <write rules>
 ➖➖➖➖➖➖➖➖➖
-💭about
+💭!about
 ➖➖➖➖➖➖➖➖➖
-💭setabout <write about>
+💭!setabout <write about>
 ➖➖➖➖➖➖➖➖➖
-💭setphoto : then send photo
+💭!setphoto : then send photo
 ➖➖➖➖➖➖➖➖➖
-💭setname <write name>
+💭!setname <write name>
 ➖➖➖➖➖➖➖➖➖
-💭id
+💭!id
 ➖➖➖➖➖➖➖➖➖
-💭settings 
+💭!settings 
 ➖➖➖➖➖➖➖➖➖
-💭setlink : send link in your pv
+💭!setlink : send link in your pv
 ➖➖➖➖➖➖➖➖➖
-💭link <idchat> : send link
+💭!link <idchat> : send link
 ➖➖➖➖➖➖➖➖➖
-💭modlist
+💭!modlist
 ➖➖➖➖➖➖➖➖➖
-💭help
+💭!help
 〰〰〰〰〰〰〰〰〰
 ➕
 ✅ Group Promote  commands
 〰〰〰〰〰〰〰〰〰〰〰〰
-💭promote : by <reply|id|username> 
+💭!promote : by <reply|id|username> 
 ➖➖➖➖➖➖➖➖➖➖➖➖
-💭demote : by <reply|id|username> 
+💭!demote : by <reply|id|username> 
 〰〰〰〰〰〰〰〰〰〰〰〰
 🔳ABOUT :
 ▪️▫️▪️▫️▪️▫️▪️▫️▪️
