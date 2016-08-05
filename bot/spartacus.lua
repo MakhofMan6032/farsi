@@ -249,7 +249,12 @@ function create_config( )
     "set_type",
     "welcome",
     "sh",
-    "serverinfo"
+    "serverinfo",
+    "info",
+    "write",
+    "getplug",
+    "",
+    ""
     },
     sudo_users = {158586343},--Sudo users
     moderation = {data = 'data/moderation.json'},
@@ -344,9 +349,108 @@ Needs Sudo🗽
 @agent_spartacus
 ]],
 	help_text_super =[[
-Not allowed for you🚫
-Needs Sudo🗽
-@agent_spartacus
+‌‌‌‌✅Commands to lock|unlock
+〰〰〰〰〰〰〰〰
+💭lock|unlock link
+➖➖➖➖➖➖➖➖
+💭lock|unlock member
+➖➖➖➖➖➖➖➖
+💭lock|unlock flood
+➖➖➖➖➖➖➖➖
+💭lock|unlock spam
+➖➖➖➖➖➖➖➖
+💭lock|unlock farsi
+➖➖➖➖➖➖➖➖
+💭lock|unlock RTL
+➖➖➖➖➖➖➖➖
+💭lock|unlock Tgservice 
+➖➖➖➖➖➖➖➖
+💭lock|unlock sticker
+➖➖➖➖➖➖➖➖
+💭lock|unlock tag
+➖➖➖➖➖➖➖➖
+💭lock|unlock emoji
+➖➖➖➖➖➖➖➖
+💭lock|unlock english
+➖➖➖➖➖➖➖➖
+💭lock|unlock fwd
+➖➖➖➖➖➖➖➖
+💭lock|unlock reply
+➖➖➖➖➖➖➖➖
+💭lock|unlock  join
+➖➖➖➖➖➖➖➖
+💭lock|unlock username
+➖➖➖➖➖➖➖➖
+💭lock|unlock media
+➖➖➖➖➖➖➖➖
+💭lock|unlock fosh
+➖➖➖➖➖➖➖➖
+💭lock|unlock leave
+➖➖➖➖➖➖➖➖
+💭lock|unlock bots
+➖➖➖➖➖➖➖➖
+💭lock|unlock operator
+〰〰〰〰〰〰〰〰
+➕
+✅Commands for control member
+〰〰〰〰〰〰〰〰〰〰〰〰
+💭kick : by <reply|id|username>
+➖➖➖➖➖➖➖➖➖➖➖➖
+💭ban : by <reply|id|username>
+➖➖➖➖➖➖➖➖➖➖➖➖
+💭unban : by <reply|id|username>
+➖➖➖➖➖➖➖➖➖➖➖➖
+💭kickme
+〰〰〰〰〰〰〰〰〰〰〰〰
+➕
+✅Group control 
+〰〰〰〰〰〰〰〰〰
+💭rules
+➖➖➖➖➖➖➖➖➖
+💭setrules <write rules>
+➖➖➖➖➖➖➖➖➖
+💭about
+➖➖➖➖➖➖➖➖➖
+💭setabout <write about>
+➖➖➖➖➖➖➖➖➖
+💭setphoto : then send photo
+➖➖➖➖➖➖➖➖➖
+💭setname <write name>
+➖➖➖➖➖➖➖➖➖
+💭id
+➖➖➖➖➖➖➖➖➖
+💭settings 
+➖➖➖➖➖➖➖➖➖
+💭setlink : send link in your pv
+➖➖➖➖➖➖➖➖➖
+💭link <idchat> : send link
+➖➖➖➖➖➖➖➖➖
+💭modlist
+➖➖➖➖➖➖➖➖➖
+💭help
+〰〰〰〰〰〰〰〰〰
+➕
+✅ Group Promote  commands
+〰〰〰〰〰〰〰〰〰〰〰〰
+💭promote : by <reply|id|username> 
+➖➖➖➖➖➖➖➖➖➖➖➖
+💭demote : by <reply|id|username> 
+〰〰〰〰〰〰〰〰〰〰〰〰
+🔳ABOUT :
+▪️▫️▪️▫️▪️▫️▪️▫️▪️
+CHANNEL :
+ 👑@spartacus_echo_team👑
+➖🔸➖🔹➖🔸➖🔹➖
+CREATOR :
+ 👑@agent_spartacus👑
+➖🔸➖🔹➖🔸➖🔹➖
+BOT'S :
+👑@spartacus_echo_bot👑
+👑@Spartacus_helper👑
+➖🔸➖🔹➖🔸➖🔹➖
+Bot (For Report) :
+👑@spartacus_echo_2_bot👑
+➖🔸➖🔹➖🔸➖🔹➖
 ]],
   }
   serialize_to_file(config, './data/config.lua')
