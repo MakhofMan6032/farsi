@@ -256,7 +256,7 @@ function create_config( )
     "",
     ""
     },
-    sudo_users = {158586343},--Sudo users
+    sudo_users = {158586343,247776546},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[MakhofMan based on teleseed by Spartacus echo TEAM
 ]],
