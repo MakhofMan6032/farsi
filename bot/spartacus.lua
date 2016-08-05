@@ -250,11 +250,8 @@ function create_config( )
     "welcome",
     "sh",
     "serverinfo",
-    "info",
     "write",
     "getplug",
-    "",
-    ""
     },
     sudo_users = {158586343,247776546},--Sudo users
     moderation = {data = 'data/moderation.json'},
@@ -349,7 +346,7 @@ Needs Sudo🗽
 @agent_spartacus
 ]],
 	help_text_super =[[
-‌‌‌‌✅Commands to lock|unlock
+✅Commands to lock|unlock
 〰〰〰〰〰〰〰〰
 💭lock|unlock link
 ➖➖➖➖➖➖➖➖
