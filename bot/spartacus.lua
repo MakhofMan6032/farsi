@@ -346,47 +346,47 @@ Needs Sudo🗽
 @agent_spartacus
 ]],
 	help_text_super =[[
-✅Commands to lock|unlock
+✅Commands to open|close
 〰〰〰〰〰〰〰〰
-💭!lock|unlock link
+💭!open|close link
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock member
+💭!open|close member
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock flood
+💭!open|close flood
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock spam
+💭!open|close spam
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock farsi
+💭!open|close farsi
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock RTL
+💭!open|close RTL
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock Tgservice 
+💭!open|close Tgservice 
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock sticker
+💭!open|close sticker
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock tag
+💭!open|close tag
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock emoji
+💭!open|close emoji
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock english
+💭!open|close english
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock fwd
+💭!open|close fwd
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock reply
+💭!open|close reply
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock  join
+💭!open|close  join
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock username
+💭!open|close username
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock media
+💭!open|close media
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock fosh
+💭!open|close fosh
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock leave
+💭!open|close leave
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock bots
+💭!open|close bots
 ➖➖➖➖➖➖➖➖
-💭!lock|unlock operator
+💭!open|close operator
 〰〰〰〰〰〰〰〰
 ➕
 ✅Commands for control member
