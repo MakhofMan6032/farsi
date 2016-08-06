@@ -82,8 +82,8 @@ MeGa-shield has several commands that are only usable at certain ranks.
 | [#!/]setlink | Set a new SuperGroup link _If bot is not creator_. | N | Y |
 | [#!/]link | Retrieves the group/SuperGroup link. | Y | Y |
 | [#!/]rules | Retrieves the group/SuperGroup rules. | Y | Y |
-| [#!/]lock [setting](#settings-settings) | Lock group/SuperGroup settings. | Y | Y |
-| [#!/]unlock [setting](#settings-settings) | Unlock group/SuperGroup. | Y | Y |
+| [#!/]close [setting](#settings-settings) | Lock group/SuperGroup settings. | Y | Y |
+| [#!/]open [setting](#settings-settings) | Unlock group/SuperGroup. | Y | Y |
 | [#!/]mute [mute](#mutes-mutes) | mute group message types. | Y | Y |
 | [#!/]unmute [mute](#mutes-mutes) | unmute group message types. | Y | Y |
 | [#!/]setflood [value](#settings-settings) | Set [value] as flood sensitivity.| Y | Y |
@@ -177,19 +177,19 @@ MeGa-shield has several commands that are only usable at certain ranks.
 
 | Command | Groups? | SuperGroups? |
 |:--------|:--------|:-------------|
-| <html>&#91;</html>#!/](un)lock links | Y | Y |
-| <html>&#91;</html>#!/](un)lock flood | Y | Y |
-| <html>&#91;</html>#!/]setflood [1-200] | Y | Y |
-| <html>&#91;</html>#!/](un)lock bots | Y | Y |
-| <html>&#91;</html>#!/](un)lock spam | Y | Y |
-| <html>&#91;</html>#!/](un)lock arabic | Y | Y |
-| <html>&#91;</html>#!/](un)lock member | Y | Y |
-| <html>&#91;</html>#!/](un)lock leave | Y | Y |
-| <html>&#91;</html>#!/](un)lock RTL | Y | Y |
-| <html>&#91;</html>#!/](un)lock tgservice | N | Y |
-| <html>&#91;</html>#!/](un)lock sticker | Y| Y |
+| <html>&#91;</html>#!/]open|close links | Y | Y |
+| <html>&#91;</html>#!/]open|close flood | Y | Y |
+| <html>&#91;</html>#!/]open|close [1-200] | Y | Y |
+| <html>&#91;</html>#!/]open|close bots | Y | Y |
+| <html>&#91;</html>#!/]open|close spam | Y | Y |
+| <html>&#91;</html>#!/]open|close arabic | Y | Y |
+| <html>&#91;</html>#!/]open|close member | Y | Y |
+| <html>&#91;</html>#!/]open|close leave | Y | Y |
+| <html>&#91;</html>#!/]open|close RTL | Y | Y |
+| <html>&#91;</html>#!/]open|close tgservice | N | Y |
+| <html>&#91;</html>#!/]open|close sticker | Y| Y |
 | <html>&#91;</html>#!/]public [yes<html>&#124;</html>no] | Y | Y |
-| <html>&#91;</html>#!/](un)lock strict | N | Y |
+| <html>&#91;</html>#!/]open|close strict | N | Y |
 
 /lock [setting] and /unlock [setting]: sets allowed actions and content for groups/SuperGroups
 	***/lock strict*** in a supergroup, if strict is locked users will be kicked for violations of settings or mutes
@@ -239,8 +239,8 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/spartacusechoteam/sparta.git
-cd sparta
+git clone https://github.com/makhofman0085/MakhofMan.git
+cd MakhofMan
 chmod +x launch.sh
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
@@ -248,7 +248,7 @@ chmod +x launch.sh
 ### One command
 To install everything in one command (useful for VPS deployment) on Debian-based distros, use:
 ```sh
-#https://github.com/yagop/telegram-bot/wiki/Installation
+#https://github.com/makhofman0085/MakhofMan
 sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/hafez16/Tmega-shield.git && cd mega-shield && chmod +x launch.sh && ./launch.sh install && ./launch.sh
 ```
 
@@ -289,14 +289,16 @@ MY Telegram channels
 *
 [news](https://telegram.me/spartacusTEAM_news)
 * * *
-mohammad [(developer)](https://telegram.me/agent_spartacus)
+mohammad [(developer & creator)](https://telegram.me/agent_sudo)
 * * *
-amirho3ien [(developer)](https://telegram.me/amirho3ien911)
+mahdi [(developer)](https://telegram.me/Vampirism)
 * * *
-amir [(manager)](https://telegram.me/Eblis_alone)
+mohammad [(editor)](https://telegram.me/mmdblack1)
 * * *
-abolfazl [(sponsor)](https://telegram.me/a_b_o_l_i)
+seyyed mohammad [(editor)](ttps://telegram.me/sudo_antispam)
 * * *
-created
-by
+Artin [(sponsor)](https://telegram.me/Artin_hiphopi)
+* * *
+# created
+# by
 # SPARTACUS ECHO TEAM
