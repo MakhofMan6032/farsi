@@ -295,7 +295,7 @@ mahdi [(developer)](https://telegram.me/Vampirism)
 * * *
 mohammad [(editor)](https://telegram.me/mmdblack1)
 * * *
-seyyed mohammad [(editor)](ttps://telegram.me/sudo_antispam)
+seyyed mohammad [(editor)](https://telegram.me/sudo_antispam)
 * * *
 Artin [(sponsor)](https://telegram.me/Artin_hiphopi)
 * * *
