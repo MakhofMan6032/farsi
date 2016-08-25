@@ -256,7 +256,7 @@ function create_config( )
     },
     sudo_users = {158586343,247776546},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[MakhofMan based on teleseed by Spartacus echo TEAM
+    about_text = [[MakhofMan based on teleseed by TeleSudo TEAM
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -344,111 +344,118 @@ This command will send text to [group_id]
     help_text = [[
 Not allowed for you🚫
 Needs Sudo🗽
-@agent_spartacus
+@agent_sudo
 ]],
 	help_text_super =[[
-✅Commands to open|close
+✅قفل | باز کردن تنظیمات
 〰〰〰〰〰〰〰〰
-💭!open|close link
+💭قفل کردن | باز کردن لینک
 ➖➖➖➖➖➖➖➖
-💭!open|close member
+💭قفل کردن | باز کردن اعضا
 ➖➖➖➖➖➖➖➖
-💭!open|close flood
+💭قفل کردن | باز کردن حساسیت
 ➖➖➖➖➖➖➖➖
-💭!open|close spam
+💭قفل کردن | باز کردن اسپم
 ➖➖➖➖➖➖➖➖
-💭!open|close farsi
+💭قفل کردن | باز کردن فارسی
 ➖➖➖➖➖➖➖➖
-💭!open|close RTL
+💭قفل کردن | باز کردن راست به چپ
 ➖➖➖➖➖➖➖➖
-💭!open|close Tgservice 
+💭قفل کردن | باز کردن خدمات تلگرام
 ➖➖➖➖➖➖➖➖
-💭!open|close sticker
+💭قفل کردن | باز کردن استیکر
 ➖➖➖➖➖➖➖➖
-💭!open|close tag
+💭قفل کردن | باز کردن تگ
 ➖➖➖➖➖➖➖➖
-💭!open|close emoji
+💭قفل کردن | باز کردن شکلک
 ➖➖➖➖➖➖➖➖
-💭!open|close english
+💭قفل کردن | باز کردن لاتین
 ➖➖➖➖➖➖➖➖
-💭!open|close fwd
+💭قفل کردن | باز کردن فوروارد
 ➖➖➖➖➖➖➖➖
-💭!open|close reply
+💭قفل کردن | باز کردن ریپلی
 ➖➖➖➖➖➖➖➖
-💭!open|close  join
+💭قفل کردن | باز کردن ورود
 ➖➖➖➖➖➖➖➖
-💭!open|close username
+💭قفل کردن | باز کردن یوزرنیم
 ➖➖➖➖➖➖➖➖
-💭!open|close media
+💭قفل کردن | باز کردن مدیا
 ➖➖➖➖➖➖➖➖
-💭!open|close fosh
+💭قفل کردن | باز کردن فوش
 ➖➖➖➖➖➖➖➖
-💭!open|close leave
+💭قفل کردن | باز کردن خروج
 ➖➖➖➖➖➖➖➖
-💭!open|close bots
+💭قفل کردن | باز کردن ربات ها
 ➖➖➖➖➖➖➖➖
-💭!open|close operator
+💭قفل کردن | باز کردن اپراطور
 〰〰〰〰〰〰〰〰
 ➕
-✅Commands for control member
+✅لیست دستورات برای کنترل گروه
 〰〰〰〰〰〰〰〰〰〰〰〰
-💭!kick : by <reply|id|username>
+💭کیک
+ (به همراه ریپلی) 
 ➖➖➖➖➖➖➖➖➖➖➖➖
-💭!ban : by <reply|id|username>
+💭بن
+ (به همراه ریپلی) 
 ➖➖➖➖➖➖➖➖➖➖➖➖
-💭!unban : by <reply|id|username>
+💭آن بن
+ (به همراه ریپلی) 
 ➖➖➖➖➖➖➖➖➖➖➖➖
-💭!kickme
+💭کیکم کن
+ (خروج از گروه) 
 〰〰〰〰〰〰〰〰〰〰〰〰
 ➕
-✅Group control 
+✅کنترل گروه
 〰〰〰〰〰〰〰〰〰
-💭!rules
+💭قوانین
 ➖➖➖➖➖➖➖➖➖
-💭!setrules <write rules>
+💭تنظیم قوانین
 ➖➖➖➖➖➖➖➖➖
-💭!about
+💭توضیحات
 ➖➖➖➖➖➖➖➖➖
-💭!setabout <write about>
+💭تنظیم توضیحات
 ➖➖➖➖➖➖➖➖➖
-💭!setphoto : then send photo
+💭تنظیم عکس
 ➖➖➖➖➖➖➖➖➖
-💭!setname <write name>
+💭تنظیم نام
 ➖➖➖➖➖➖➖➖➖
-💭!id
+💭ایدی
 ➖➖➖➖➖➖➖➖➖
-💭!settings 
+💭تنظیمات
 ➖➖➖➖➖➖➖➖➖
-💭!setlink : send link in your pv
+💭تنظیم لینک
 ➖➖➖➖➖➖➖➖➖
-💭!link <idchat> : send link
+💭لینک
 ➖➖➖➖➖➖➖➖➖
-💭!modlist
+💭لیست مدیران
 ➖➖➖➖➖➖➖➖➖
-💭!help
+💭راهنما
 〰〰〰〰〰〰〰〰〰
 ➕
-✅ Group Promote  commands
+✅تنظیمات مقام در گروه
 〰〰〰〰〰〰〰〰〰〰〰〰
-💭!promote : by <reply|id|username> 
+💭ارتقا
+ (به همراه ریپلی) 
 ➖➖➖➖➖➖➖➖➖➖➖➖
-💭!demote : by <reply|id|username> 
+💭تنزل
+ (به همراه ریپلی) 
 〰〰〰〰〰〰〰〰〰〰〰〰
-🔳ABOUT :
+🔳منبع :
 ▪️▫️▪️▫️▪️▫️▪️▫️▪️
-CHANNEL :
- 👑@spartacus_echo_team👑
-➖🔸➖🔹➖🔸➖🔹➖
-CREATOR :
- 👑@agent_spartacus👑
-➖🔸➖🔹➖🔸➖🔹➖
-BOT'S :
-👑@spartacus_echo_bot👑
-👑@Spartacus_helper👑
-➖🔸➖🔹➖🔸➖🔹➖
-Bot (For Report) :
-👑@spartacus_echo_2_bot👑
-➖🔸➖🔹➖🔸➖🔹➖
+کانال اخبار ربات:
+ 👑 @spartacus_echo_team 👑
+➖🔸➖🔹➖🔸➖🔹➖🔸➖🔹➖
+سازنده ربات :
+ 👑 @agent_sudo 👑
+ 👑 @black1m 👑
+➖🔸➖🔹➖🔸➖🔹➖🔸➖🔹➖
+ربات های دیگر ما :
+👑 @TeleSudo_helper 👑
+👑 @TeleSudo_API_Bot 👑
+➖🔸➖🔹➖🔸➖🔹➖🔸➖🔹➖
+ربات پیام رسان :
+👑 @TeleSudo_pm_bot 👑
+➖🔸➖🔹➖🔸➖🔹➖🔸➖🔹➖
 ]],
   }
   serialize_to_file(config, './data/config.lua')
