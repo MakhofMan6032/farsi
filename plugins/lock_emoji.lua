@@ -170,4 +170,4 @@ return {patterns = {
  "🌶",
  "🖐🏼",
 },run = run}
-
+--@agent_sudo
