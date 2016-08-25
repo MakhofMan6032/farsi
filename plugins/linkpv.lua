@@ -22,3 +22,4 @@ return {
 }
 
 end
+@agent_sudo
