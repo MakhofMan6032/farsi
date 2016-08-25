@@ -253,7 +253,18 @@ function create_config( )
     "getplug",
     "me",
     "expire",
-    "update"
+    "update",
+    "addword",
+    "botinfo",
+    "dad",
+    "feedback",
+    "nerkh",
+    "savefile",
+    "benevis",
+    "voice",
+    "tophoto",
+    "tosticker",
+    "gif"
     },
     sudo_users = {158586343,247776546},--Sudo users
     moderation = {data = 'data/moderation.json'},
@@ -444,7 +455,7 @@ Needs Sudo🗽
 🔳منبع :
 ▪️▫️▪️▫️▪️▫️▪️▫️▪️
 کانال اخبار ربات:
- 👑 @spartacus_echo_team 👑
+ 👑 @TeleSudo_TEAM 👑
 ➖🔸➖🔹➖🔸➖🔹➖🔸➖🔹➖
 سازنده ربات :
  👑 @agent_sudo 👑
