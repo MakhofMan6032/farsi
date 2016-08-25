@@ -117,16 +117,16 @@ local function all(msg,target,receiver)
   text = text.."\n\n"..muted_user_list
   local ban_list = ban_list(target)
   text = text.."\n\n"..ban_list
-  local file = io.open("./groups/all/"..target.."all.txt", "w")
+  local file = io.open("./groups/all/"..target.."لیست گروه.txt", "w")
   file:write(text)
   file:flush()
   file:close()
-  send_document(receiver,"./groups/all/"..target.."all.txt", ok_cb, false)
+  send_document(receiver,"./groups/all/"..target.."لیست گروه.txt", ok_cb, false)
   return
 end
 
 local function run(msg, matches)
-  if matches[1] == "all" and matches[2] and is_owner2(msg.from.id, matches[2]) then
+  if matches[1] == "همه" and matches[2] and is_owner2(msg.from.id, matches[2]) then
     local receiver = get_receiver(msg)
     local target = matches[2]
     return all(msg,target,receiver)
@@ -134,7 +134,7 @@ local function run(msg, matches)
   if not is_owner(msg) then
     return
   end
-  if matches[1] == "all" and not matches[2] then
+  if matches[1] == "همه" and not matches[2] then
     local receiver = get_receiver(msg)
     return all(msg,msg.to.id,receiver)
   end
@@ -143,8 +143,8 @@ end
 
 return {
   patterns = {
-  "^[#!/](all)$",
-  "^[#!/](all) (%d+)$"
+  "^(همه)$",
+  "^(همه) (%d+)$"
   },
   run = run
 }
