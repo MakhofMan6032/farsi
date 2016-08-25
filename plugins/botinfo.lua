@@ -18,7 +18,7 @@ return {
     "Show bot about.",
   },
   patterns = {
-    "^[!/]([Tt]ele[Ss]udo)$",
+    "^[!/]([Tt]eleSudo)$",
   }, 
   run = run,
 }
