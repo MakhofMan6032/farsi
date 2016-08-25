@@ -165,7 +165,7 @@ local function run(msg,matches)
       		end
       	end
     end
-    if matches[1] == "setbotphoto" then
+    if matches[1] == "تنظیم عکس بات" then
     	redis:set("bot:photo", "waiting")
     	return 'Please send me bot photo now'
     end
@@ -197,7 +197,7 @@ local function run(msg,matches)
     	unblock_user("user#id"..matches[2],ok_cb,false)
     	return "User unblocked"
     end
-    if matches[1] == "import" then--join by group link
+    if matches[1] == "برو به" then--join by group link
     	local hash = parsed_url(matches[2])
     	import_chat_link(hash,ok_cb,false)
     end
@@ -269,7 +269,7 @@ end
 		local text = serpent.block(msg, {comment=false})
 		send_large_msg("channel#id"..msg.to.id, text)
 	end]]
-	if matches[1] == 'updateid' then
+	if matches[1] == 'آپدیت آیدی' then
 		local data = load_data(_config.moderation.data)
 		local long_id = data[tostring(msg.to.id)]['long_id']
 		if not long_id then
@@ -278,7 +278,7 @@ end
 			return "آیدی اپدیت شد"
 		end
 	end
-	if matches[1] == 'addlog' and not matches[2] then
+	if matches[1] == 'ادد لوگ' and not matches[2] then
 		if is_log_group(msg) then
 			return "لوگ وجود دارد"
 		end
@@ -286,7 +286,7 @@ end
 		savelog(msg.to.id, name_log.." ["..msg.from.id.."] added Log_SuperGroup")
 		logadd(msg)
 	end
-	if matches[1] == 'remlog' and not matches[2] then
+	if matches[1] == 'حذف لوگ' and not matches[2] then
 		if not is_log_group(msg) then
 			return "هیچ لوگی وجود ندارد"
 		end
@@ -307,12 +307,13 @@ end
 return {
   patterns = {
 	"^[#!/](pm) (%d+) (.*)$",
-	"^[#!/](import) (.*)$",
+	"^[#!/](برو به) (.*)$",
 	"^[#!/](pmunblock) (%d+)$",
 	"^[#!/](pmblock) (%d+)$",
 	"^[#!/](markread) (on)$",
 	"^[#!/](markread) (off)$",
 	"^[#!/](setbotphoto)$",
+	"^(تنظیم عکس بات)$",
 	"^[#!/](contactlist)$",
 	"^[#!/](dialoglist)$",
 	"^[#!/](delcontact) (%d+)$",
@@ -320,11 +321,11 @@ return {
 	"^[#!/](sendcontact) (.*) (.*) (.*)$",
 	"^[#!/](mycontact)$",
 	"^[#/!](reload)$",
-	"^[$](ریلود)$",
-	"^[#/!](updateid)$",
+	"^(ریلود)$",
+	"^[#/!](آپدیت آیدی)$",
 	"^[#/!](sync_gbans)$",
-	"^[#/!](addlog)$",
-	"^[#/!](remlog)$",
+	"^[#/!](ادد لوگ)$",
+	"^[#/!](حذف لوگ)$",
 	"%[(photo)%]",
   },
   run = run,
